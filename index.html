@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Foodie App</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <h1>Funfisty delight</h1>
+
+  <div class="topbar">
+    <input type="text" id="search" placeholder="Search food...">
+    
+    <button onclick="toggleTheme()">Dark</button>
+
+    <button class="cart-btn" onclick="toggleCart()">
+      🛒 <span id="cartCount" class="badge">0</span>
+    </button>
+  </div>
+</header>
+
+<div class="filters">
+  <button onclick="filterFood('all')">All</button>
+  <button onclick="filterFood('fast')">Fast Food</button>
+  <button onclick="filterFood('healthy')">Healthy</button>
+</div>
+
+<div id="menu"></div>
+
+<!-- CART -->
+<div id="cartBox">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <h3>Total: ₹<span id="total">0</span></h3>
+  <button onclick="clearCart()">Clear Cart</button>
+  <button class="order-btn" onclick="placeOrder()">Place Order</button>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast"></div>
+
+<!-- LOADER -->
+<div id="loader" class="loader"></div>
+
+<!-- POPUP -->
+<div id="orderPopup" class="popup">
+  <h2> Order Successful!</h2>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h2>Funfisty delight</h2>
+      <p>Delicious food delivered fast to your doorstep. Fresh, hot & tasty meals anytime.</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Cart</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p> West Bengal, India</p>
+      <p> +91 8240795284</p>
+      <p> sohan07.x0@gmail.com</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Follow Us</h3>
+      <p>
+        <a href="https://www.instagram.com/sxhan_07.x?igsh=dXlqcDZ4Nm9vendy&utm_source=qr">Instagram</a>
+        <a href="https://www.facebook.com/share/1GA1FuWwJP/?mibextid=wwXIfr">Facebook</a>
+        <a href="https://twitter.com/yourusername">Twitter</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Foodie App | All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
